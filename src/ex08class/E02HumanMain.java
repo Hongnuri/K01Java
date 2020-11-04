@@ -1,0 +1,41 @@
+package ex08class;
+
+/* 해당 예제에서는 Human 클래스를 외부파일로 선언하였다.
+ 동일한 패키지에 정의된다면 컴파일러는 해당 클래스를 찾아서
+ 즉시 객체화(인스턴스) 할 수 있다.
+ 만약 다른 패키지에 선언 된 클래스라면 반드시 import 선언을 해줘야한다.
+ */
+public class E02HumanMain 
+{
+	public static void main(String[] args)
+	{
+		// 1. 객체 생성
+		Human human = new Human();
+		
+		// 2. 객체의 초기화
+		human.name = "홍진혁";
+		human.age = 33;
+		human.energy = 4;
+		
+		// 3. 멤버메소드를 통해 상태 등의 행동을 구현한다.
+		human.showState();
+		human.eat();
+		human.walk();
+		human.thinking();
+		human.showState();
+		
+		// 4. 에너지를 고갈시켜본다. walk() 메소드 20번 호출
+		for(int i=1; i<=20 ; i++)
+		{
+			human.walk();
+		}
+		human.showState();
+		
+		// 5. 에너지가 최대치를 넘는지 확인한다.
+		for(int i = 1; i <=20; i++)
+		{
+			human.eat();
+		}
+			human.showState();
+	}
+}
