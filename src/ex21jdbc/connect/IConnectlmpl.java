@@ -1,5 +1,6 @@
 package ex21jdbc.connect;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -7,10 +8,16 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
+
+
 public class IConnectlmpl implements IConnect {
+	
+
 	
 	// 동적쿼리 처리를 위한 객체
 	public Connection con; 
+	public CallableStatement csmt;//오라클의 함수/프로시저를 실행하기 위한 객체
+
 	public PreparedStatement psmt;
 	public ResultSet rs;
 	
@@ -82,7 +89,7 @@ public class IConnectlmpl implements IConnect {
 	public String scanValue(String title) {
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.print(title + "을(를) 입력(exit->종료");
+		System.out.print(title + "을(를) 입력(exit->종료):");
 		String inputStr = scan.nextLine();
 		/*
 		equalsIgnoreCas()
