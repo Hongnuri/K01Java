@@ -7,7 +7,7 @@ import ex21jdbc.connect.IConnectlmpl;
 
 public class IsMemberProcCall extends IConnectlmpl{
 	
-	public IsMemberProcCall() {
+	public IsMemberProcCall(){
 		super("kosmo","1234");
 	}
 	@Override
