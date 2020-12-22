@@ -49,19 +49,16 @@ public class InsertQuery {
 					+ " ('test3', '3333', '삼길동', SYSDATE) ";
 			
 			//5.쿼리실행 및 결과값 반환
-			
 			/*
 			executeUpdate() : 쿼리문이 insert/update/delete와 같이
 			  	기존레코드에 영향을 미치는경우에 사용된다. 실행후 영향을 받은
 			  	행의 갯수가 int형으로 반환된다. 
-			executeQuery() : select 쿼리를 실행할 때 , 호출하는 메소드로
+			executeQuery() : select 쿼리를 실행할때 호출하는 메소드로
 				레코드에 영향을 미치지 않고 조회만 하는 경우 사용된다. 
 				조회한 레코드를 반환값으로 받아야 하므로 ResultSet객체를
 				반환타입으로 사용하게된다. 
 			*/
-			
 			int affected = stmt.executeUpdate(sql);
-			
 			System.out.println(affected +"행이 입력되었습니다.");
 		}
 		catch(SQLException e) {

@@ -22,7 +22,7 @@ public class R04array {
 			for(int j=0 ; j<arr.length ; j++) {
 				if(i!=j) {
 					if(arr[i]==arr[j]) {
-						isDup = false; // 중복인 경우 false로 변경						
+						isDup = false;//중복인 경우 false로 변경						
 					}
 				}
 				else {
@@ -42,7 +42,7 @@ public class R04array {
 		중복값이 있는지 검사하는 프로그램을 작성하시오.
 		중복이 없는경우에는 true, 중복이 있는경우에는 false를 반환한다.
 		함수명 : arrayExistElements
-		*/
+		 */
 		int[] arr1 = new int[] {1,2,3,4,5};
 		int[] arr2 = {1,2,3,2,5};
 		

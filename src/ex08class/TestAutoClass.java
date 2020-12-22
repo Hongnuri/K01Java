@@ -1,7 +1,7 @@
 package ex08class;
 
-public class TestAutoClass 
-{
+public class TestAutoClass {
+	
 	String carName;
 	int carYear;
 	String owner;
@@ -36,5 +36,7 @@ public class TestAutoClass
 	public void setOwner(String owner) {
 		this.owner = owner;
 	}
+	
+	
 	
 }

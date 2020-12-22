@@ -16,16 +16,14 @@ public class AccountDAO {
 	//멤버메소드
 	
 	//초기화
-	public void init(String name, String accNumber, int balance) 
-	{
+	public void init(String name, String accNumber, int balance) {
 		capsule.setName(name);
 		capsule.setAccountNumber(accNumber);
 		capsule.setBalance(balance);
 	}
 		
 	//저축
-	public void deposit(int money) 
-	{
+	public void deposit(int money) {
 		capsule.setBalance(capsule.getBalance() + money);
 		System.out.println(money+"원이 입금되었습니다.");
 		printAccount();

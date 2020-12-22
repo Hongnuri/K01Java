@@ -1,5 +1,17 @@
 package ex19thread;
 
+/*
+동기화블럭
+	: 메소드 전체를 동기화 하지 않고 코드중에 필요한
+	부분만 동기화하는 방식으로 동기화메소드에 비해 
+	성능이 우수하다. 
+형식)
+	void myFunc() {
+		synchronized(열쇠로사용할객체){
+			동기화할코드 ; 
+		}
+	}
+ */
 class DataSyncClass
 {
 	int shareData;
@@ -64,5 +76,3 @@ public class Ex05Sync4Block
 		t2.start();
 	}
 }
-
-

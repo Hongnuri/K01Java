@@ -35,4 +35,5 @@ public class E06ArrayInit {
 				해당 index는 null이므로 출력이 불가능하다. 
 			 	*/
 	}
+
 }

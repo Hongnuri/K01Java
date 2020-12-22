@@ -1,7 +1,7 @@
 package bokang;
 
-import bokang.CheckCard1;
-import bokang.CheckCard2;
+import bokang.sub.CheckCard1;
+import bokang.sub.CheckCard2;
 
 public class R05Class {
 

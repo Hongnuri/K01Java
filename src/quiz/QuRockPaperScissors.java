@@ -21,7 +21,14 @@ public class QuRockPaperScissors {
 			int user = 0;
 			System.out.println("가위바위보를 입력하세요.");
 			System.out.print("가위(1), 바위(2), 보(3)=>");
-			user = scanner.nextInt();
+			
+			try {
+				user = scanner.nextInt();
+			}
+			catch (Exception e) {
+				scanner.nextLine();
+				e.printStackTrace();
+			}
 			
 			//3.승부판단		
 			//사용자가 정상적으로 입력한 경우

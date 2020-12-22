@@ -40,6 +40,18 @@ public class Qu_04_01 {
 			System.out.println("숫자가 아닙니다.");
 		}
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }

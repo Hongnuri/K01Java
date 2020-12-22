@@ -19,7 +19,6 @@ public class R03method {
 			for(int su=1 ; su<=9 ; su++) {
 				System.out.printf("%2d*%2d=%2d ", dan, su, (dan*su));
 			}
-			
 			System.out.println();
 		}
 	}
@@ -75,6 +74,8 @@ public class R03method {
 		System.out.println("매개변수O, 반환값X");
 		guguRangeShow(2, 7);
 		
+		
+		
 		/*
 		시나리오] sungjukResult() 메소드를 호출하면 국어,영어,수학
 		점수를 입력받은후 평균값을 반환하도록 구현하시오.
@@ -121,4 +122,14 @@ public class R03method {
 			System.out.println();
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

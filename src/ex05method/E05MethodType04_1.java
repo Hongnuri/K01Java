@@ -7,6 +7,11 @@ import java.util.Scanner;
 	매개변수도 있고, 반환값도 있는 메소드.
 	4가지 형식중 가장 활용빈도가 높은 메소드 이다. 
  */
+ 
+class A{
+	
+}
+
 public class E05MethodType04_1 {
 
 	/*

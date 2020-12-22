@@ -11,11 +11,9 @@ continue문
 	조건을 확인한다. 따라서 continue아래 문장은 실행되지 
 	않는다.
  */
-public class E06BreakContinue 
-{
+public class E06BreakContinue {
 
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) {
 		
 		/*
 		반목문 내에서 break, continue문을 사용할때는 반드시
@@ -23,8 +21,7 @@ public class E06BreakContinue
 		Unreachable code 에러가 발생한다. 
 		 */
 		int i = 0;
-		while(true) 
-		{
+		while(true) {
 			i++;
 			System.out.printf("[i가 %d일때]\n", i);
 
@@ -41,11 +38,9 @@ public class E06BreakContinue
 		중첩된 반복문 안에서 break문을 만나면 '가장 가까운 반복문 하나'를
 		탈출하게된다. 
 		 */
-		for(int x=1 ; x<=5 ; x++) 
-		{
+		for(int x=1 ; x<=5 ; x++) {
 			System.out.println("x="+x);
-			for(int y=1 ; y<=5 ; y++) 
-			{
+			for(int y=1 ; y<=5 ; y++) {
 				System.out.println("y="+ y);
 				if(y==3)
 					break; 
